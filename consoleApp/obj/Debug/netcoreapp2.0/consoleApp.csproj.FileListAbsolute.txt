@@ -1,0 +1,10 @@
+c:\Users\Edgar\projects\lyricFind\consoleApp\bin\Debug\netcoreapp2.0\consoleApp.deps.json
+c:\Users\Edgar\projects\lyricFind\consoleApp\bin\Debug\netcoreapp2.0\consoleApp.runtimeconfig.json
+c:\Users\Edgar\projects\lyricFind\consoleApp\bin\Debug\netcoreapp2.0\consoleApp.runtimeconfig.dev.json
+c:\Users\Edgar\projects\lyricFind\consoleApp\bin\Debug\netcoreapp2.0\consoleApp.dll
+c:\Users\Edgar\projects\lyricFind\consoleApp\bin\Debug\netcoreapp2.0\consoleApp.pdb
+c:\Users\Edgar\projects\lyricFind\consoleApp\obj\Debug\netcoreapp2.0\consoleApp.csproj.CoreCompileInputs.cache
+c:\Users\Edgar\projects\lyricFind\consoleApp\obj\Debug\netcoreapp2.0\consoleApp.AssemblyInfoInputs.cache
+c:\Users\Edgar\projects\lyricFind\consoleApp\obj\Debug\netcoreapp2.0\consoleApp.AssemblyInfo.cs
+c:\Users\Edgar\projects\lyricFind\consoleApp\obj\Debug\netcoreapp2.0\consoleApp.dll
+c:\Users\Edgar\projects\lyricFind\consoleApp\obj\Debug\netcoreapp2.0\consoleApp.pdb
