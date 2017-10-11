@@ -24,7 +24,7 @@ public class LyricController : Controller
     [HttpGet]
     public async Task<IActionResult> GetAsync([FromQuery]LyricRequest request)
     {
-        var url = $"{settings.Lyrics.Endpoint}?apikey={settings.Lyrics.ApiKey}&territory=US&lrckey={settings.Lyrics.lrckey}&reqtype=default&trackid=artistname:{request.ArtistName.Replace(" ", "+")},trackname:{request.SongName.Replace(" ", "+")}&format=lrconly,clean&output={settings.Lyrics.Output}";
+        var url = $"{settings.Lyrics.Endpoint}?apikey={settings.Lyrics.ApiKey}&territory=US&reqtype=default&trackid=artistname:{request.ArtistName.Replace(" ", "+")},trackname:{request.SongName.Replace(" ", "+")}&format=clean&output={settings.Lyrics.Output}";
         
         var result = await httpClient.GetAsync(url);        
         var lyricFindResponse = jsonConverter.DeserializeObject<LyricFindResponse>(await result.Content.ReadAsStringAsync());

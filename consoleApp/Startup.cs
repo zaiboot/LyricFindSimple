@@ -23,7 +23,7 @@ namespace consoleApp
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("Configuration.json", optional: true, reloadOnChange: true);
+                .AddJsonFile("Configuration.json", optional: false, reloadOnChange: true);
             Configuration = builder.Build();
         }
 
