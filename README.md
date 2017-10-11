@@ -6,4 +6,6 @@ dotnet run
 ~~~~
 
 And then you app should be running in http://localhost:5000.
-To change your configuration just go to: [consoleApp\Configuration.json](consoleApp\Configuration.json) and update your api key
+To change your configuration just go to: [consoleApp\Configuration.json](consoleApp\Configuration.json) and update your api key.
+
+Sample requests are in [postman\LyricFind.postman_collection.json](postman\LyricFind.postman_collection.json)

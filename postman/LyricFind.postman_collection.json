@@ -1,0 +1,243 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LyricFind",
+		"_postman_id": "16279efb-0b39-78be-8df5-099532eac711",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BasicSearch",
+			"request": {
+				"url": {
+					"raw": "api.lyricfind.com/lyric.do?apikey=&territory=US&reqtype=default&trackid=artistname:eminem,trackname:white+america&format=lrconly,clean",
+					"host": [
+						"api",
+						"lyricfind",
+						"com"
+					],
+					"path": [
+						"lyric.do"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "territory",
+							"value": "US",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "reqtype",
+							"value": "default",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "trackid",
+							"value": "artistname:eminem,trackname:white+america",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "format",
+							"value": "lrconly,clean",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchtype",
+							"value": "track",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "BasicSearch Coldplay",
+			"request": {
+				"url": {
+					"raw": "api.lyricfind.com/lyric.do?apikey=&territory=US&lrckey=&reqtype=default&trackid=artistname:COLDPLAY,trackname:Don't+Panic&format=lrconly,clean&output=json",
+					"host": [
+						"api",
+						"lyricfind",
+						"com"
+					],
+					"path": [
+						"lyric.do"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "territory",
+							"value": "US",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lrckey",
+							"value": "",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "reqtype",
+							"value": "default",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "trackid",
+							"value": "artistname:COLDPLAY,trackname:Don't+Panic",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "format",
+							"value": "lrconly,clean",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "BasicSearch Coldplay copy",
+			"request": {
+				"url": {
+					"raw": "api.lyricfind.com/lyric.do?apikey=&territory=US&reqtype=default&trackid=artistname:Limp+Bizkit,trackname:Rollin'&format=clean&output=json",
+					"host": [
+						"api",
+						"lyricfind",
+						"com"
+					],
+					"path": [
+						"lyric.do"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "territory",
+							"value": "US",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "reqtype",
+							"value": "default",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "trackid",
+							"value": "artistname:Limp+Bizkit,trackname:Rollin'",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "format",
+							"value": "clean",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchtype",
+							"value": "track",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Basic Call",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/Lyric/?ArtistName=Coldplay&SongName=Yellow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Lyric",
+						""
+					],
+					"query": [
+						{
+							"key": "ArtistName",
+							"value": "Coldplay",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "SongName",
+							"value": "Yellow",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
