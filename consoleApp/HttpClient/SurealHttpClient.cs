@@ -4,15 +4,17 @@
     using System.Net.Http;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
+    using Microsoft.Extensions.Logging;
 
     public sealed class SurealHttpClient : IHttpClient
     {
         private readonly HttpClient _httpClient;
+        private readonly ILogger<SurealHttpClient> logger;
 
-
-        public SurealHttpClient(HttpClient httpClient)
+        public SurealHttpClient(HttpClient httpClient, ILogger<SurealHttpClient> logger)
         {
             _httpClient = httpClient;
+            this.logger = logger;
         }
 
         public async Task<HttpResponseMessage> PostAsync(string url, FormUrlEncodedContent content)
@@ -52,11 +54,11 @@
         {
             using (_httpClient)
             {
-                Console.WriteLine("Url = {0}", url);
+                logger.LogInformation("Url = {0}", url);
                 var newUri = new Uri(url, UriKind.Absolute);
                 var result = await _httpClient.GetAsync(newUri);
                 var content = await result.Content.ReadAsStringAsync();
-                Console.WriteLine("Result = {0} \n {1}", result.StatusCode, content);
+                logger.LogInformation("Result = {0} \n {1}", result.StatusCode, content);
                 return result;
             }
         }
